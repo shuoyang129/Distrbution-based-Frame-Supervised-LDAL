@@ -1,0 +1,92 @@
+################## Configuration for starting a new training task from scratch. ##################
+# default float is torch.float32; default int is torch.long
+
+exp_dir: log  # save training outputs in /log
+
+model:
+  n_layers: 2
+  dim: 512  # must be even due to bi-gru we have in model
+  dropout: 0.1
+  glove_path: "/home/ys/data/pretrained/glove.840B.300d.txt"
+  temp: 0.07
+  topk: 1
+
+charadessta:
+  # feature_dir: /home/ys/data/CharadesSTA/charades/features/i3d_finetuned
+  feature_dir: /home/ys/data/CharadesSTA/new
+  feature_dim: 1024
+  video_feature_len: 128
+  batch_size: 256
+
+  clip_frames:
+    - 8
+  stride: 4
+  sigma_factor: 0.3
+  epoch: 12
+  loss1: 0.5
+  loss2: 0.05
+  tmp: 0.5
+  s_weight: 0.2
+  d_weight: 1
+  threshold: 0.9
+  pooling: max_pooling
+
+  moment_length_factors:
+    - 0.1
+    - 0.15
+    - 0.2
+    - 0.25
+    - 0.3
+    - 0.35
+    - 0.4
+  overlapping_factors:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+    - 0.9
+
+tacos:
+  feature_dir: /data/ys/TACoS/org
+  feature_dim: 4096
+  video_feature_len: 512
+  batch_size: 64
+  clip_frames:
+    - 32
+  stride: 16
+  sigma_factor: 1.0
+  epoch: 22
+  loss1: 0.1
+  loss2: 1
+  tmp: 0.07
+  s_weight: 0.6
+  d_weight: 0.8
+  threshold: 0.9
+  pooling: mean_pooling
+
+  moment_length_factors:
+    - 0.05
+    - 0.1
+    - 0.15
+    - 0.2
+    - 0.25
+    - 0.3
+    - 0.35
+    - 0.4
+  overlapping_factors:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+    - 0.9
+
