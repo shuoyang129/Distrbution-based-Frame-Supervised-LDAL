@@ -12,7 +12,7 @@ This repository is based on the repository of the paper ["Video Moment Retrieval
 - pyyaml
 - tqdm
 
-You can also run the following command to prepare the conda environmnet.
+You can also run the following commands to prepare the conda environmnet.
 ```
 # preparing environment
 bash conda.sh
@@ -30,10 +30,9 @@ We use I3D features for charadessta and C3D features for tacos. I3D features for
 Please also download [glove](https://nlp.stanford.edu/data/glove.840B.300d.zip) to the `data/glove` folder.
 
 #### Model
-Our trained model are provided in [link](https://drive.google.com/drive/folders/10UIZM2OWx5UzbLjHZWmGi6cZphgj1rU8?usp=drive_link). Please download them to the `ckpt/` folder.
+Our trained model are provided in [link](https://drive.google.com/drive/folders/10UIZM2OWx5UzbLjHZWmGi6cZphgj1rU8?usp=sharing). Please download them to the `ckpt/` folder.
 
 ## Quick Start
-#### Testing
 Run the following commands for evaluation: 
 ```
 # Evaluate charades
