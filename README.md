@@ -44,3 +44,4 @@ python -m src.experiment.eval --exp ckpt/tacos
 ```
 
 ## Citation
+Shuo Yang, Zirui Shang, and Xinxiao Wu. 2023. Probability Distribution Based Frame-supervised Language-driven Action Localization. In Proceedings of the 31st ACM International Conference on Multimedia (MM ’23), October 29–November 3, 2023, Ottawa, ON, Canada. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3581783.3612512
